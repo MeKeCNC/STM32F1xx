@@ -1,0 +1,5 @@
+eeprom_24AAxxx.c:56:13:putByte	24	static
+eeprom_24AAxxx.c:42:16:getByte	24	static
+eeprom_24AAxxx.c:90:30:readBlock	56	static
+eeprom_24AAxxx.c:66:30:writeBlock	56	static
+eeprom_24AAxxx.c:110:6:i2c_eeprom_init	8	static

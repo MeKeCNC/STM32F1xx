@@ -1,0 +1,8 @@
+limits.c:148:13:limits_pull_off	112	static
+limits.c:62:25:limit_signals_merge	8	static
+limits.c:95:15:limit_interrupt_handler	16	static
+limits.c:123:6:limits_set_machine_positions	32	static
+limits.c:463:6:limits_go_home	160	static
+limits.c:500:6:limits_soft_check	16	static
+limits.c:521:6:limits_set_homing_axes	4	static
+limits.c:535:6:limits_homing_required	0	static

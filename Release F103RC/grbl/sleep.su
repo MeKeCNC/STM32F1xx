@@ -1,0 +1,3 @@
+sleep.c:28:13:fall_asleep	0	static
+sleep.c:34:13:sleep_execute	24	static
+sleep.c:64:6:sleep_check	8	static

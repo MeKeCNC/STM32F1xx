@@ -1,0 +1,12 @@
+motion_control.c:96:6:mc_line	16	static
+motion_control.c:213:6:mc_arc	96	static
+motion_control.c:396:6:mc_cubic_b_spline	128	static
+motion_control.c:490:6:mc_canned_drill	80	static
+motion_control.c:593:6:mc_thread	88	static
+motion_control.c:711:15:mc_jog_execute	16	static
+motion_control.c:738:6:mc_dwell	8	static
+motion_control.c:854:12:mc_probe_cycle	32	static
+motion_control.c:929:6:mc_parking_motion	16	static
+motion_control.c:947:6:mc_override_ctrl_update	8	static
+motion_control.c:960:15:mc_reset	16	static
+motion_control.c:750:15:mc_homing_cycle	48	static

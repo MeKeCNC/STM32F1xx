@@ -1,0 +1,3 @@
+btt_skr_mini_e3_2.0.c:34:28:tmc_uart_read	40	static
+btt_skr_mini_e3_2.0.c:71:6:tmc_uart_write	16	static
+btt_skr_mini_e3_2.0.c:78:6:board_init	24	static

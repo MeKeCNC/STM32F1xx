@@ -1,0 +1,14 @@
+serial.c:269:17:serial2RxFree	0	static
+serial.c:279:17:serial2RxCount	0	static
+serial.c:289:13:serial2RxFlush	0	static
+serial.c:297:13:serial2RxCancel	0	static
+serial.c:320:13:serial2PutC	24	static
+serial.c:342:13:serial2WriteS	8	static
+serial.c:354:13:serial2Write	16	static
+serial.c:365:13:serial2TxFlush	0	static
+serial.c:374:17:serial2TxCount	0	static
+serial.c:384:16:serial2GetC	0	static
+serial.c:402:37:serial2SetRtHandler	0	static
+serial.c:397:13:serial2SuspendInput	0	static
+serial.c:412:20:serial2Init	56	static
+serial.c:458:6:USART3_IRQHandler	8	static

@@ -73,8 +73,6 @@
 #define TRINAMIC_DEV        0
 #endif
 
-#define CNC_BOOSTERPACK     0
-
 // Define GPIO output mode options
 
 #define GPIO_SHIFT0   0
@@ -112,6 +110,8 @@
   #include "cnc3040_map.h"
 #elif defined(BOARD_MY_MACHINE)
   #include "my_machine_map.h"
+#elif defined(BTT_SKR_MINI_E3_V20)
+  #include "btt_skr_mini_e3_2.0_map.h"
 #else // default board
   #include "generic_map.h"
 #endif
@@ -139,8 +139,10 @@
 #define FLASH_ENABLE 0
 #endif
 
-#if EEPROM_ENABLE|| KEYPAD_ENABLE || (TRINAMIC_ENABLE && TRINAMIC_I2C)
-#define I2C_PORT
+#if EEPROM_ENABLE || KEYPAD_ENABLE || (TRINAMIC_ENABLE && TRINAMIC_I2C)
+#ifndef I2C_PORT
+#define I2C_PORT 2
+#endif
 #endif
 
 #if KEYPAD_ENABLE && !defined(KEYPAD_PORT)
@@ -151,8 +153,43 @@
 #error SD card plugin not supported!
 #endif
 
-#if TRINAMIC_ENABLE && CNC_BOOSTERPACK == 0
+#if TRINAMIC_ENABLE && !(defined(BOARD_CNC_BOOSTERPACK) || defined(BTT_SKR_MINI_E3_V20) || defined(TRINAMIC_DEBUG))
 #error Trinamic plugin not supported!
+#endif
+
+typedef struct {
+    pin_function_t id;
+    GPIO_TypeDef *port;
+    uint8_t pin;
+    uint32_t bit;
+    pin_group_t group;
+    volatile bool active;
+    volatile bool debounce;
+    pin_irq_mode_t irq_mode;
+    pin_mode_t cap;
+    ioport_interrupt_callback_ptr interrupt_callback;
+    const char *description;
+} input_signal_t;
+
+typedef struct {
+    pin_function_t id;
+    GPIO_TypeDef *port;
+    uint8_t pin;
+    pin_group_t group;
+    pin_mode_t mode;
+    const char *description;
+} output_signal_t;
+
+typedef struct {
+    uint8_t n_pins;
+    union {
+        input_signal_t *inputs;
+        output_signal_t *outputs;
+    } pins;
+} pin_group_pins_t;
+
+#ifdef HAS_BOARD_INIT
+void board_init (void);
 #endif
 
 bool driver_init (void);

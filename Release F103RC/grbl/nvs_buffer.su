@@ -1,0 +1,11 @@
+nvs_buffer.c:96:23:ram_get_byte	0	static
+nvs_buffer.c:101:20:ram_put_byte	4	static
+nvs_buffer.c:187:13:nvs_warning	0	static
+nvs_buffer.c:111:30:memcpy_to_ram	48	static
+nvs_buffer.c:174:30:memcpy_from_ram	24	static
+nvs_buffer.c:193:6:nvs_buffer_alloc	8	static
+nvs_buffer.c:213:6:nvs_buffer_init	24	static
+nvs_buffer.c:258:15:nvs_alloc	8	static
+nvs_buffer.c:286:6:nvs_buffer_sync_physical	40	static
+nvs_buffer.c:203:6:nvs_buffer_free	8	static
+nvs_buffer.c:355:11:nvs_buffer_get_physical	0	static

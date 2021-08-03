@@ -1,0 +1,15 @@
+tmc5160.c:139:6:TMC5160_SetDefaults	8	static
+tmc5160.c:177:15:cs2rms	0	static
+tmc5160.c:189:10:TMC5160_GetCurrent	4	static
+tmc5160.c:195:6:TMC5160_SetCurrent	24	static
+tmc5160.c:146:6:TMC5160_Init	16	static
+tmc5160.c:228:10:TMC5160_GetTPWMTHRS	16	static
+tmc5160.c:233:6:TMC5160_SetHybridThreshold	8	static
+tmc5160.c:239:6:TMC5160_SetTHIGH	8	static
+tmc5160.c:245:6:TMC5160_SetTCOOLTHRS	8	static
+tmc5160.c:252:6:TMC5160_MicrostepsIsValid	0	static
+tmc5160.c:257:6:TMC5160_SetMicrosteps	8	static
+tmc5160.c:265:6:TMC5160_SetConstantOffTimeChopper	16	static
+tmc5160.c:289:18:TMC5160_WriteRegister	8	static
+tmc5160.c:298:18:TMC5160_ReadRegister	8	static
+tmc5160.c:308:21:TMC5160_GetRegPtr	0	static
