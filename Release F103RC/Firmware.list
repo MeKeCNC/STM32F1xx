@@ -9181,7 +9181,7 @@ Disassembly of section .text:
  8005e5a:	bf00      	nop
  8005e5c:	422181b0 	.word	0x422181b0
  8005e60:	42218188 	.word	0x42218188
- 8005e64:	4222018c 	.word	0x4222018c
+ 8005e64:	42220194 	.word	0x42220194
  8005e68:	40010c00 	.word	0x40010c00
  8005e6c:	20000430 	.word	0x20000430
  8005e70:	40000400 	.word	0x40000400
@@ -9296,14 +9296,14 @@ Disassembly of section .text:
  8005f96:	4b0c      	ldr	r3, [pc, #48]	; (8005fc8 <spindleGetState+0x38>)
  8005f98:	6881      	ldr	r1, [r0, #8]
  8005f9a:	f893 3174 	ldrb.w	r3, [r3, #372]	; 0x174
- 8005f9e:	f3c1 1180 	ubfx	r1, r1, #6, #1
+ 8005f9e:	f3c1 11c0 	ubfx	r1, r1, #7, #1
  8005fa2:	f013 0304 	ands.w	r3, r3, #4
  8005fa6:	bf18      	it	ne
  8005fa8:	6883      	ldrne	r3, [r0, #8]
  8005faa:	f361 0200 	bfi	r2, r1, #0, #1
  8005fae:	4907      	ldr	r1, [pc, #28]	; (8005fcc <spindleGetState+0x3c>)
  8005fb0:	bf18      	it	ne
- 8005fb2:	f3c3 1380 	ubfxne	r3, r3, #6, #1
+ 8005fb2:	f3c3 13c0 	ubfxne	r3, r3, #7, #1
  8005fb6:	f891 00de 	ldrb.w	r0, [r1, #222]	; 0xde
  8005fba:	f363 0241 	bfi	r2, r3, #1, #1
  8005fbe:	4050      	eors	r0, r2
@@ -9488,7 +9488,7 @@ Disassembly of section .text:
  800614c:	20000430 	.word	0x20000430
  8006150:	40000400 	.word	0x40000400
  8006154:	422181b0 	.word	0x422181b0
- 8006158:	4222018c 	.word	0x4222018c
+ 8006158:	42220194 	.word	0x42220194
  800615c:	42218188 	.word	0x42218188
  8006160:	200003d4 	.word	0x200003d4
  8006164:	200003cc 	.word	0x200003cc
@@ -9520,7 +9520,7 @@ Disassembly of section .text:
  80061a4:	4770      	bx	lr
  80061a6:	bf00      	nop
  80061a8:	20003bec 	.word	0x20003bec
- 80061ac:	42220198 	.word	0x42220198
+ 80061ac:	4222019c 	.word	0x4222019c
  80061b0:	20003a18 	.word	0x20003a18
 
 080061b4 <spindle_set_speed>:
@@ -9578,7 +9578,7 @@ Disassembly of section .text:
  800622c:	200003e0 	.word	0x200003e0
  8006230:	200003dc 	.word	0x200003dc
  8006234:	20003bec 	.word	0x20003bec
- 8006238:	42220198 	.word	0x42220198
+ 8006238:	4222019c 	.word	0x4222019c
  800623c:	40012c00 	.word	0x40012c00
 
 08006240 <settings_changed>:
@@ -9845,7 +9845,7 @@ Disassembly of section .text:
  800651c:	20000430 	.word	0x20000430
  8006520:	422181b0 	.word	0x422181b0
  8006524:	42218188 	.word	0x42218188
- 8006528:	4222018c 	.word	0x4222018c
+ 8006528:	42220194 	.word	0x42220194
  800652c:	200003c4 	.word	0x200003c4
  8006530:	20003bec 	.word	0x20003bec
  8006534:	422181b8 	.word	0x422181b8
@@ -10017,7 +10017,7 @@ Disassembly of section .text:
  8006700:	f7ff bd58 	b.w	80061b4 <spindle_set_speed>
  8006704:	200003e0 	.word	0x200003e0
  8006708:	20003bec 	.word	0x20003bec
- 800670c:	42220198 	.word	0x42220198
+ 800670c:	4222019c 	.word	0x4222019c
  8006710:	20003a18 	.word	0x20003a18
 
 08006714 <jtag_enable>:
@@ -10227,14 +10227,13 @@ Disassembly of section .text:
  8006914:	f895 3174 	ldrb.w	r3, [r5, #372]	; 0x174
  8006918:	079b      	lsls	r3, r3, #30
  800691a:	d5ab      	bpl.n	8006874 <driver_setup+0x120>
- 800691c:	2280      	movs	r2, #128	; 0x80
- 800691e:	2302      	movs	r3, #2
- 8006920:	4814      	ldr	r0, [pc, #80]	; (8006974 <driver_setup+0x220>)
- 8006922:	a904      	add	r1, sp, #16
- 8006924:	e9cd 2304 	strd	r2, r3, [sp, #16]
- 8006928:	f7fa fad8 	bl	8000edc <HAL_GPIO_Init>
- 800692c:	e7a2      	b.n	8006874 <driver_setup+0x120>
- 800692e:	bf00      	nop
+ 800691c:	f44f 7280 	mov.w	r2, #256	; 0x100
+ 8006920:	2302      	movs	r3, #2
+ 8006922:	4814      	ldr	r0, [pc, #80]	; (8006974 <driver_setup+0x220>)
+ 8006924:	a904      	add	r1, sp, #16
+ 8006926:	e9cd 2304 	strd	r2, r3, [sp, #16]
+ 800692a:	f7fa fad7 	bl	8000edc <HAL_GPIO_Init>
+ 800692e:	e7a1      	b.n	8006874 <driver_setup+0x120>
  8006930:	40021000 	.word	0x40021000
  8006934:	0801be24 	.word	0x0801be24
  8006938:	40010c00 	.word	0x40010c00
@@ -10249,10 +10248,10 @@ Disassembly of section .text:
  800695c:	200003d0 	.word	0x200003d0
  8006960:	422181b0 	.word	0x422181b0
  8006964:	42218188 	.word	0x42218188
- 8006968:	4222018c 	.word	0x4222018c
+ 8006968:	42220194 	.word	0x42220194
  800696c:	d1b71759 	.word	0xd1b71759
  8006970:	40000800 	.word	0x40000800
- 8006974:	40011000 	.word	0x40011000
+ 8006974:	40010800 	.word	0x40010800
  8006978:	6b5fca6b 	.word	0x6b5fca6b
 
 0800697c <driver_init>:

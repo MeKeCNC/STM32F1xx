@@ -34,7 +34,7 @@
 #undef TRINAMIC_MIXED_DRIVERS
 #endif
 #define TRINAMIC_ENABLE 2209
-//#define TRINAMIC_MIXED_DRIVERS 0
+#define TRINAMIC_MIXED_DRIVERS 1
 
 #if EEPROM_ENABLE < 2
 #undef EEPROM_ENABLE
@@ -63,7 +63,7 @@
 #define Y_DIRECTION_PORT    GPIOB
 #define Y_DIRECTION_PIN     2  //PB2
 #define Z_DIRECTION_PORT    GPIOC
-#define Z_DIRECTION_PIN     3  //PC3 //********
+#define Z_DIRECTION_PIN     5  //PC5 //********
 #define X_DIRECTION_BIT     (1<<X_DIRECTION_PIN)
 #define Y_DIRECTION_BIT     (1<<Y_DIRECTION_PIN)
 #define Z_DIRECTION_BIT     (1<<Z_DIRECTION_PIN)
@@ -105,15 +105,15 @@
 
   // Define spindle enable and spindle direction output pins.
 #define SPINDLE_ENABLE_PORT         GPIOC
-#define SPINDLE_ENABLE_PIN          6 //PC6
+#define SPINDLE_ENABLE_PIN          7 //PC6
 #define SPINDLE_ENABLE_BIT          (1<<SPINDLE_ENABLE_PIN)
 #define SPINDLE_DIRECTION_PORT      GPIOC
-#define SPINDLE_DIRECTION_PIN       6 //PC6
+#define SPINDLE_DIRECTION_PIN       7 //PC6
 #define SPINDLE_DIRECTION_BIT       (1<<SPINDLE_DIRECTION_PIN)
 
 // Define spindle PWM output pin.
-#define SPINDLE_PWM_PORT            GPIOC
-#define SPINDLE_PWM_PIN             7 //PC7
+#define SPINDLE_PWM_PORT            GPIOA//GPIOC
+#define SPINDLE_PWM_PIN             8 //PC7
 #define SPINDLE_PWM_BIT             (1<<SPINDLE_PWM_PIN)
 
 // Define flood and mist coolant enable output pins.
