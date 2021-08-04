@@ -62,7 +62,9 @@ Src/driver.o: ../Src/driver.c ../Inc/main.h \
  D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/limits.h \
  ../Inc/i2c.h \
  D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/plugins.h \
- ../Inc/usb_serial.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/sdcard/sdcard.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/platform.h \
+ ../FatFs/ff.h ../FatFs/ffconf.h ../FatFs/diskio.h \
  D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/eeprom/eeprom.h \
  D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/stepdir_map.h \
  D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/motor_pins.h
@@ -201,7 +203,15 @@ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/limits.h:
 
 D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/plugins.h:
 
-../Inc/usb_serial.h:
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/sdcard/sdcard.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/platform.h:
+
+../FatFs/ff.h:
+
+../FatFs/ffconf.h:
+
+../FatFs/diskio.h:
 
 D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/eeprom/eeprom.h:
 

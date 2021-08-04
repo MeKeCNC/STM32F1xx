@@ -56,7 +56,12 @@ sdcard/sdcard.o: ../sdcard/sdcard.c ../sdcard/sdcard.h ../Inc/driver.h \
  d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmc2209hal.h \
  d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmchal.h \
  d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h \
- D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/platform.h
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/platform.h \
+ ../FatFs/ff.h ../FatFs/ffconf.h ../FatFs/diskio.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/report.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/protocol.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/state_machine.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/sdcard/ymodem.h
 
 ../sdcard/sdcard.h:
 
@@ -181,3 +186,17 @@ d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmchal.h:
 d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h:
 
 D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/platform.h:
+
+../FatFs/ff.h:
+
+../FatFs/ffconf.h:
+
+../FatFs/diskio.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/report.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/protocol.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/state_machine.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/sdcard/ymodem.h:

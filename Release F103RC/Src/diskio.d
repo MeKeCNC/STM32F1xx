@@ -55,7 +55,8 @@ Src/diskio.o: ../Src/diskio.c ../Inc/driver.h ../Inc/main.h \
  D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/motors/trinamic.h \
  d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmc2209hal.h \
  d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmchal.h \
- d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h
+ d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h \
+ ../Inc/main.h ../FatFs/ff.h ../FatFs/ffconf.h ../FatFs/diskio.h
 
 ../Inc/driver.h:
 
@@ -176,3 +177,11 @@ d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmc2209ha
 d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmchal.h:
 
 d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h:
+
+../Inc/main.h:
+
+../FatFs/ff.h:
+
+../FatFs/ffconf.h:
+
+../FatFs/diskio.h:

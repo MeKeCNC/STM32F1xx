@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="s,S">
+<includepath workspace_path="true">/GRBL Driver STM32F103C8/FatFs</includepath>
+
+</language>
+<language name="C Source File">
+<includepath>Inc</includepath>
+<includepath>grbl</includepath>
+<includepath>Drivers/STM32F1xx_HAL_Driver/Inc</includepath>
+<includepath>Drivers/STM32F1xx_HAL_Driver/Inc/Legacy</includepath>
+<includepath>Drivers/CMSIS/Device/ST/STM32F1xx/Include</includepath>
+<includepath>Drivers/CMSIS/Include</includepath>
+<includepath>USB_DEVICE/App</includepath>
+<includepath>USB_DEVICE/Target</includepath>
+<includepath>Middlewares/ST/STM32_USB_Device_Library/Core/Inc</includepath>
+<includepath>Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc</includepath>
+<includepath>FatFs</includepath>
+<includepath workspace_path="true">/GRBL Driver STM32F103C8</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="s,S">
+<macro>
+<name>NVS_SIZE</name><value>512</value>
+</macro>
+
+</language>
+<language name="C Source File">
+<macro>
+<name>USE_HAL_DRIVER</name><value/>
+</macro>
+<macro>
+<name>STM32F103xB</name><value/>
+</macro>
+<macro>
+<name>RX_BUFFER_SIZE</name><value>512</value>
+</macro>
+<macro>
+<name>NVS_SIZE</name><value>1536</value>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+</cdtprojectproperties>

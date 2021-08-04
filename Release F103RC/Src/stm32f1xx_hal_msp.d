@@ -27,7 +27,36 @@ Src/stm32f1xx_hal_msp.o: ../Src/stm32f1xx_hal_msp.c ../Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+ ../Inc/driver.h ../Inc/main.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/hal.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/grbl.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/config.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/core_handlers.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/system.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/gcode.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/nuts_bolts.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/coolant_control.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/spindle_control.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/errors.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/probe.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/alarms.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/messages.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/stream.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/settings.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/plugins.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/nvs.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/report.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/crossbar.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/stepper.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/planner.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/grbl.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/nuts_bolts.h \
+ ../Inc/my_machine.h ../Inc/btt_skr_mini_e3_2.0_map.h \
+ D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/motors/trinamic.h \
+ d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmc2209hal.h \
+ d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmchal.h \
+ d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h
 
 ../Inc/main.h:
 
@@ -88,3 +117,65 @@ Src/stm32f1xx_hal_msp.o: ../Src/stm32f1xx_hal_msp.c ../Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
+
+../Inc/driver.h:
+
+../Inc/main.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/hal.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/grbl.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/config.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/core_handlers.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/system.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/gcode.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/nuts_bolts.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/coolant_control.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/spindle_control.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/errors.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/probe.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/alarms.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/messages.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/stream.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/settings.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/plugins.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/nvs.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/report.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/crossbar.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/stepper.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/planner.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/grbl.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/grbl/nuts_bolts.h:
+
+../Inc/my_machine.h:
+
+../Inc/btt_skr_mini_e3_2.0_map.h:
+
+D:/Works/MeKe\ PCB/Arduino-VS\ Code/GRBL\ Driver\ STM32F103C8/motors/trinamic.h:
+
+d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmc2209hal.h:
+
+d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\tmchal.h:
+
+d:\works\meke\ pcb\arduino-vs\ code\grbl\ driver\ stm32f103c8\trinamic\common.h:

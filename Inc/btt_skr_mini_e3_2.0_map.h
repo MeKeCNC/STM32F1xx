@@ -16,7 +16,8 @@
   You should have received a copy of the GNU General Public License
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
-//#define TRINAMIC_MIXED_DRIVERS 0
+
+#define TRINAMIC_MIXED_DRIVERS 0
 #if N_AXIS == 4
 #define BOARD_NAME "BTT SKR MINI E3 V2.0 4-axis"
 #else
@@ -34,7 +35,8 @@
 #undef TRINAMIC_MIXED_DRIVERS
 #endif
 #define TRINAMIC_ENABLE 2209
-#define TRINAMIC_MIXED_DRIVERS 1
+
+#define SDCARD_ENABLE 1
 
 #if EEPROM_ENABLE < 2
 #undef EEPROM_ENABLE
@@ -73,7 +75,6 @@
 #define A_DIRECTION_PIN     4  //PB4
 #define A_DIRECTION_BIT     (1<<A_DIRECTION_PIN)
 #endif
-
 #define DIRECTION_OUTMODE   GPIO_BITBAND
 
 // Define stepper driver enable/disable output pin.
@@ -113,7 +114,7 @@
 
 // Define spindle PWM output pin.
 #define SPINDLE_PWM_PORT            GPIOA//GPIOC
-#define SPINDLE_PWM_PIN             8 //PC7
+#define SPINDLE_PWM_PIN             8 //PA8
 #define SPINDLE_PWM_BIT             (1<<SPINDLE_PWM_PIN)
 
 // Define flood and mist coolant enable output pins.
@@ -150,6 +151,7 @@
 #define KEYPAD_STROBE_PIN           1 //PA1
 #define KEYPAD_STROBE_BIT           (1<<KEYPAD_STROBE_PIN)
 #endif
+
 
 #if SDCARD_ENABLE
 #define SD_CS_PORT  GPIOA

@@ -1,0 +1,11 @@
+diskio.c:135:6:wait_ready	4	static
+diskio.c:224:6:rcvr_datablock	16	static
+diskio.c:290:6:send_cmd.part.0	32	static
+diskio.c:154:6:send_initial_clock_train	16	static
+diskio.c:174:6:power_on	8	static
+diskio.c:378:9:disk_initialize	40	static
+diskio.c:443:9:disk_status	0	static
+diskio.c:457:9:disk_read	40	static
+diskio.c:549:9:disk_ioctl	32	static
+diskio.c:658:6:disk_timerproc	0	static
+diskio.c:678:7:get_fattime	0	static
