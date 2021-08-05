@@ -1,0 +1,7 @@
+spindle_control.c:134:7:spindle_set_rpm	16	static
+spindle_control.c:52:6:spindle_set_state	16	static
+spindle_control.c:32:6:spindle_set_override	8	static
+spindle_control.c:77:6:spindle_sync	24	static
+spindle_control.c:103:6:spindle_restore	16	static
+spindle_control.c:164:6:spindle_precompute_pwm_values	24	static
+spindle_control.c:193:15:spindle_compute_pwm_value	24	static

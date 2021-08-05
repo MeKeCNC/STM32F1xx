@@ -430,20 +430,20 @@ typedef union
     uint32_t _reserved1:28;              /*!< bit:  4..31  Reserved */
   } b;                                   /*!< Structure used for bit  access */
   uint32_t w;                            /*!< Type      used for word access */
-} CONTROL_Type;
+} Type;
 
 /* CONTROL Register Definitions */
-#define CONTROL_SFPA_Pos                    3U                                            /*!< CONTROL: SFPA Position */
-#define CONTROL_SFPA_Msk                   (1UL << CONTROL_SFPA_Pos)                      /*!< CONTROL: SFPA Mask */
+#define SFPA_Pos                    3U                                            /*!< CONTROL: SFPA Position */
+#define SFPA_Msk                   (1UL << SFPA_Pos)                      /*!< CONTROL: SFPA Mask */
 
-#define CONTROL_FPCA_Pos                    2U                                            /*!< CONTROL: FPCA Position */
-#define CONTROL_FPCA_Msk                   (1UL << CONTROL_FPCA_Pos)                      /*!< CONTROL: FPCA Mask */
+#define FPCA_Pos                    2U                                            /*!< CONTROL: FPCA Position */
+#define FPCA_Msk                   (1UL << FPCA_Pos)                      /*!< CONTROL: FPCA Mask */
 
-#define CONTROL_SPSEL_Pos                   1U                                            /*!< CONTROL: SPSEL Position */
-#define CONTROL_SPSEL_Msk                  (1UL << CONTROL_SPSEL_Pos)                     /*!< CONTROL: SPSEL Mask */
+#define SPSEL_Pos                   1U                                            /*!< CONTROL: SPSEL Position */
+#define SPSEL_Msk                  (1UL << SPSEL_Pos)                     /*!< CONTROL: SPSEL Mask */
 
-#define CONTROL_nPRIV_Pos                   0U                                            /*!< CONTROL: nPRIV Position */
-#define CONTROL_nPRIV_Msk                  (1UL /*<< CONTROL_nPRIV_Pos*/)                 /*!< CONTROL: nPRIV Mask */
+#define nPRIV_Pos                   0U                                            /*!< CONTROL: nPRIV Position */
+#define nPRIV_Msk                  (1UL /*<< nPRIV_Pos*/)                 /*!< CONTROL: nPRIV Mask */
 
 /*@} end of group CMSIS_CORE */
 

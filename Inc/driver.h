@@ -64,7 +64,7 @@
 #define EEPROM_IS_FRAM      0
 #endif
 #ifndef TRINAMIC_ENABLE
-#define TRINAMIC_ENABLE     0
+#define TRINAMIC_ENABLE     2209
 #endif
 #ifndef TRINAMIC_I2C
 #define TRINAMIC_I2C        0
@@ -155,6 +155,19 @@
 
 #if TRINAMIC_ENABLE && !(defined(BOARD_CNC_BOOSTERPACK) || defined(BTT_SKR_MINI_E3_V20) || defined(TRINAMIC_DEBUG))
 #error Trinamic plugin not supported!
+#endif
+
+#ifndef RESET_PORT
+#define RESET_PORT CONTROL_PORT
+#endif
+#ifndef FEED_HOLD_PORT
+#define FEED_HOLD_PORT CONTROL_PORT
+#endif
+#ifndef CYCLE_START_PORT
+#define CYCLE_START_PORT CONTROL_PORT
+#endif
+#if SAFETY_DOOR_ENABLE && !defined(SAFETY_DOOR_PORT)
+#define SAFETY_DOOR_PORT CONTROL_PORT
 #endif
 
 typedef struct {

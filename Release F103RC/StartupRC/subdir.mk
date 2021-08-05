@@ -16,5 +16,5 @@ S_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 StartupRC/%.o: ../StartupRC/%.s StartupRC/subdir.mk
-	arm-none-eabi-gcc -mcpu=cortex-m3 -DNVS_SIZE=512 -c -I"D:/Works/MeKe PCB/Arduino-VS Code/GRBL Driver STM32F103C8/FatFs" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -DNVS_SIZE=512 -c -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
 

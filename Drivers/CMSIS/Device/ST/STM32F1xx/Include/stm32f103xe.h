@@ -9,7 +9,7 @@
   *          This file contains:
   *           - Data structures and the address mapping for all peripherals
   *           - Peripheral's registers declarations and bits definition
-  *           - Macros to access peripheral’s registers hardware
+  *           - Macros to access peripheralï¿½s registers hardware
   *  
   ******************************************************************************
   * @attention
@@ -599,7 +599,7 @@ typedef struct
   __I uint32_t DCOUNT;
   __I uint32_t STA;
   __IO uint32_t ICR;
-  __IO uint32_t MASK;
+  __IO uint32_t CONTROL_MASK;
   uint32_t  RESERVED0[2];
   __I uint32_t FIFOCNT;
   uint32_t  RESERVED1[13];
@@ -5919,7 +5919,7 @@ typedef struct
 #define USB_EPADDR_FIELD_Msk                    (0xFUL << USB_EPADDR_FIELD_Pos) /*!< 0x0000000F */
 #define USB_EPADDR_FIELD                        USB_EPADDR_FIELD_Msk           /*!< EndPoint ADDRess FIELD */
 
-/* EndPoint REGister MASK (no toggle fields) */
+/* EndPoint REGister CONTROL_MASK (no toggle fields) */
 #define  USB_EPREG_MASK                      (USB_EP_CTR_RX|USB_EP_SETUP|USB_EP_T_FIELD|USB_EP_KIND|USB_EP_CTR_TX|USB_EPADDR_FIELD)
                                                                            /*!< EP_TYPE[1:0] EndPoint TYPE */
 #define USB_EP_TYPE_MASK_Pos                    (9U)                           

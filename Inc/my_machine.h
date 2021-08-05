@@ -18,7 +18,7 @@
   You should have received a copy of the GNU General Public License
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
-
+#include "driver.h"
 // NOTE: Only one board may be enabled!
 // If none is enabled pin mappings from generic_map.h will be used.
 //#define BOARD_CNC3040
@@ -30,7 +30,7 @@
 // Uncomment to enable.
 
 //#define USB_SERIAL_CDC       1 // Serial communication via native USB. Comment out for UART communication.
-#define SDCARD_ENABLE      1 // Run gcode programs from SD card, requires sdcard plugin.
+#define SDCARD_ENABLE 1 // Run gcode programs from SD card, requires sdcard plugin.
 //#define KEYPAD_ENABLE      1 // I2C keypad for jogging etc., requires keypad plugin.
 //#define ODOMETER_ENABLE    1 // Odometer plugin.
 //#define TRINAMIC_ENABLE 2130 // Trinamic TMC2130 stepper driver support. NOTE: work in progress.

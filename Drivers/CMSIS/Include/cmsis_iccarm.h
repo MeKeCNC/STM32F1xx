@@ -326,8 +326,8 @@ __packed struct  __iar_u32 { uint32_t v; };
     #define __set_PSPLIM(VALUE)       (__arm_wsr("PSPLIM", (VALUE)))
   #endif
 
-  #define __TZ_get_CONTROL_NS()       (__arm_rsr("CONTROL_NS"))
-  #define __TZ_set_CONTROL_NS(VALUE)  (__arm_wsr("CONTROL_NS", (VALUE)))
+  #define __TZ_get_CONTROL_NS()       (__arm_rsr("NS"))
+  #define __TZ_set_CONTROL_NS(VALUE)  (__arm_wsr("NS", (VALUE)))
   #define __TZ_get_PSP_NS()           (__arm_rsr("PSP_NS"))
   #define __TZ_set_PSP_NS(VALUE)      (__arm_wsr("PSP_NS", (VALUE)))
   #define __TZ_get_MSP_NS()           (__arm_rsr("MSP_NS"))
@@ -642,13 +642,13 @@ __packed struct  __iar_u32 { uint32_t v; };
     __IAR_FT uint32_t __TZ_get_CONTROL_NS(void)
     {
       uint32_t res;
-      __asm volatile("MRS      %0,CONTROL_NS" : "=r" (res));
+      __asm volatile("MRS      %0,NS" : "=r" (res));
       return res;
     }
 
     __IAR_FT void   __TZ_set_CONTROL_NS(uint32_t value)
     {
-      __asm volatile("MSR      CONTROL_NS,%0" :: "r" (value));
+      __asm volatile("MSR      NS,%0" :: "r" (value));
     }
 
     __IAR_FT uint32_t   __TZ_get_PSP_NS(void)

@@ -1,0 +1,2 @@
+flash.c:34:6:memcpy_from_flash	8	static
+flash.c:40:6:memcpy_to_flash	48	static

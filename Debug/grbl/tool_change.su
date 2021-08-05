@@ -1,0 +1,14 @@
+tool_change.c:63:13:change_completed	16	static
+tool_change.c:88:13:reset	16	static
+tool_change.c:268:13:tool_select	8	static
+tool_change.c:276:22:tool_change	80	static
+tool_change.c:228:22:trap_control_cycle_start	8	static
+tool_change.c:246:22:trap_stream_cycle_start	8	static
+tool_change.c:142:13:execute_warning	8	static
+tool_change.c:53:13:on_probe_completed	8	static
+tool_change.c:108:13:restore	72	static
+tool_change.c:149:13:execute_restore	8	static
+tool_change.c:166:13:execute_probe	88	static
+tool_change.c:379:6:tc_init	8	static
+tool_change.c:405:6:tc_clear_tlo_reference	16	static
+tool_change.c:426:15:tc_probe_workpiece	72	static

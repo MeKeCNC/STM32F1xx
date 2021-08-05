@@ -1,0 +1,4 @@
+i2c.c:56:6:I2C1_EV_IRQHandler	8	static
+i2c.c:61:6:I2C1_ER_IRQHandler	8	static
+i2c.c:80:23:i2c_nvs_transfer	32	static
+i2c.c:181:6:i2c_init	32	static

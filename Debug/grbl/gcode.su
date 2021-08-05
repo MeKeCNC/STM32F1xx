@@ -1,0 +1,12 @@
+gcode.c:352:22:init_sync_motion	8	static
+gcode.c:331:13:add_output_command	8	static
+gcode.c:149:17:get_state	0	static
+gcode.c:172:8:gc_get_scaling	0	static
+gcode.c:177:16:gc_get_g51_state	16	static
+gcode.c:154:13:set_scaling	16	static
+gcode.c:192:7:gc_get_offset	16	static
+gcode.c:202:6:gc_set_tool_offset	24	static
+gcode.c:239:10:gc_get_plane_data	0	static
+gcode.c:264:6:gc_init	8	static
+gcode.c:323:6:gc_laser_ppi_enable	8	static
+gcode.c:381:15:gc_execute_block	184	static

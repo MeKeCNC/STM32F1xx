@@ -73,8 +73,8 @@ all: main-build
 main-build: Firmware.elf secondary-outputs
 
 # Tool invocations
-Firmware.elf: $(OBJS) $(USER_OBJS) D:\Works\MeKe\ PCB\Arduino-VS\ Code\GRBL\ Driver\ STM32F103C8\STM32F103RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Works\MeKe PCB\Arduino-VS Code\GRBL Driver STM32F103C8\STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Firmware.elf: $(OBJS) $(USER_OBJS) C:\Users\MKesler\Desktop\Works\GrblHAL\GRBL\ Driver\ STM32F103C8\STM32F103RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\MKesler\Desktop\Works\GrblHAL\GRBL Driver STM32F103C8\STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

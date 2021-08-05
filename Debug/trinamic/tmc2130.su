@@ -1,0 +1,16 @@
+tmc2130.c:129:13:set_tfd	0	static
+tmc2130.c:136:6:TMC2130_SetDefaults	8	static
+tmc2130.c:175:10:TMC2130_GetCurrent	16	static
+tmc2130.c:181:6:TMC2130_SetCurrent	24	static
+tmc2130.c:143:6:TMC2130_Init	16	static
+tmc2130.c:201:10:TMC2130_GetTPWMTHRS	16	static
+tmc2130.c:206:6:TMC2130_SetTPWMTHRS	16	static
+tmc2130.c:212:6:TMC2130_SetHybridThreshold	24	static
+tmc2130.c:218:6:TMC2130_SetTHIGH	8	static
+tmc2130.c:224:6:TMC2130_SetTCOOLTHRS	8	static
+tmc2130.c:231:6:TMC2130_MicrostepsIsValid	8	static
+tmc2130.c:236:6:TMC2130_SetMicrosteps	8	static
+tmc2130.c:244:6:TMC2130_SetConstantOffTimeChopper	24	static
+tmc2130.c:269:18:TMC2130_WriteRegister	8	static
+tmc2130.c:278:18:TMC2130_ReadRegister	8	static
+tmc2130.c:287:21:TMC2130_GetRegPtr	0	static

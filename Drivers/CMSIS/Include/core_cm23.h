@@ -326,14 +326,14 @@ typedef union
     uint32_t _reserved1:30;              /*!< bit:  2..31  Reserved */
   } b;                                   /*!< Structure used for bit  access */
   uint32_t w;                            /*!< Type      used for word access */
-} CONTROL_Type;
+} Type;
 
 /* CONTROL Register Definitions */
-#define CONTROL_SPSEL_Pos                   1U                                            /*!< CONTROL: SPSEL Position */
-#define CONTROL_SPSEL_Msk                  (1UL << CONTROL_SPSEL_Pos)                     /*!< CONTROL: SPSEL Mask */
+#define SPSEL_Pos                   1U                                            /*!< CONTROL: SPSEL Position */
+#define SPSEL_Msk                  (1UL << SPSEL_Pos)                     /*!< CONTROL: SPSEL Mask */
 
-#define CONTROL_nPRIV_Pos                   0U                                            /*!< CONTROL: nPRIV Position */
-#define CONTROL_nPRIV_Msk                  (1UL /*<< CONTROL_nPRIV_Pos*/)                 /*!< CONTROL: nPRIV Mask */
+#define nPRIV_Pos                   0U                                            /*!< CONTROL: nPRIV Position */
+#define nPRIV_Msk                  (1UL /*<< nPRIV_Pos*/)                 /*!< CONTROL: nPRIV Mask */
 
 /*@} end of group CMSIS_CORE */
 
